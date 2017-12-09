@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/* CSS Document */
+*{padding:0;margin:0;} 
+div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;} 
+img,input{border:none;vertical-align:middle;} 
+body{font-family:"微软雅黑";font-size:12px;background:#FFF;color:#212121; 
+line-height:30px; background:#e6e6e6;} 
+html{overflow-y:scroll;} 
+ul,ol{list-style-type:none;} 
+th,td,input{font-size:12px;} 
+h3{font-size:14px;} 
+button{border:none;cursor:pointer;font-size:12px;background-color:transparent;} 
+select{border-width:1px;_zoom:1;border-style:solid;padding-top:2px;font-size:12px;} 
+.clear{clear:both;font-size:1px;height:0;visibility:hidden;line-height:0;} 
+.clearfix:after{content:"";display:block;clear:both;} 
+.clearfix{zoom:1;} 
+a:link,a:visited{text-decoration:none;color:#333;} 
+body{background-color: #f2f2f2;}
+.clear{clear: both;}
+$fong-color:rgb(68,68,68);
+$bg-color:#fff;
+$rem:75;
+/**********顶部********/
+.top{
+    width: 100%;
+    height: 318/$rem+rem;
+    background: url(../images/fan1.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    .look{
+        width: 100%;
+        height: 50/$rem+rem;
+        position: absolute;
+        top:58/$rem+rem;
+        left: 0;
+        .look-left{
+            width: 20%;
+            height: 50/$rem+rem;
+            float: left;
+            a{
+                display: block;
+                width: 100%;
+                height: 50/$rem+rem;
+                font-size: 20/$rem+rem;
+                color: #fff;
+                font-family: "微软雅黑";
+                outline: none;
+                line-height: 50/$rem+rem;
+                i{
+                    display: inline-block;
+                    width: 20/$rem+rem;
+                    height: 24/$rem+rem;
+                    background: url(../images/fan7.png) no-repeat;
+                    background-size: 100% 100%;
+                    margin-left:9%;
+                    margin-top: -6/$rem+remv;
+                    vertical-align: middle;
+                }
+                span{
+                    display: inline-block;
+                    transform: rotate(90deg);
+                }
+            }
+            
+        }
+        .look-box{
+            width: 60%;
+            height: 50/$rem+rem;
+            float: left;
+            background-color: #fff;
+            opacity: 0.8;
+            border-radius: 72/$rem+rem;
+            img{
+                width: 26/$rem+rem;
+                height: 26/$rem+rem;
+                vertical-align: middle;
+                margin-left: 30/$rem+rem;
+            }
+            input{
+                font-size: 20/$rem+rem;
+                color: $fong-color;
+                text-indent: 6/$rem+rem;
+                width: 70%;
+                height: 50/$rem+rem;
+                line-height: 50/$rem+rem;
+                outline: none;
+            }
+        }
+        .look-right{
+            width: 20%;
+            height: 50/$rem+rem;
+            float: left;
+            img{
+                width: 50/$rem+rem;
+                height: 50/$rem+rem;
+                margin-left: 8%;
+            }
+        }
+    }
+}
+/*********底部********/
+.foot{
+    width: 100%;
+    height: 100/$rem+rem;
+    border-top: 2/$rem+rem solid #ddd;
+    position: fixed;
+    bottom: 0;
+    background-color: $bg-color;
+    ul{
+        padding-top: 20/$rem+rem;
+        width: 100%;
+        height: 84/$rem+rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            width: 25%;
+            height: 110/$rem+rem;
+            text-align: center;
+            font-size: 16/$rem+rem;
+            color: $fong-color;
+            img{
+                width: 46/$rem+rem;
+                width: 46/$rem+rem;
+                margin-top: 11/$rem+rem;
+            }
+            p{
+                margin-top: 5/$rem+rem;
+            }
+        }
+    }
+}
+/**********分类********/
+.kind{
+    width: 100%;
+    height: 224/$rem+rem;
+    background-color: $bg-color;
+    margin-top: 20/$rem+rem;
+    position: relative;
+    .kind-logo{
+        width: 100%;
+        height: 224/$rem+rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            width: 20%;
+            text-align: center;
+            img{
+                width: 60/$rem+rem;
+                height: 60/$rem+rem;
+            }
+            p{
+                font-size: 20/$rem+rem;
+                color: $fong-color;
+                margin-top: 16/$rem+rem;
+            }
+        }
+    }
+    .tip{
+        width: 60/$rem+rem;
+        height: 10/$rem+rem;
+        position: absolute;
+        bottom: 30/$rem+rem;
+        left: 340/$rem+rem;
+        li{
+            display: block;
+            width: 10/$rem+rem;
+            height: 10/$rem+rem;
+            float: left;
+            margin-left: 10/$rem+rem;
+            background-color: rgb(149, 149, 149);
+            border-radius: 50%;
+        }
+        li:first-child{
+            background-color: rgb(253, 219, 72);
+        }
+    } 
+}
+.activitynews{
+    background-color: $bg-color;
+    width: 100%;
+    height: 332/$rem+rem;
+    margin-top: 20/$rem+rem;
+    .title{
+        width: 100%;
+        height: 88/$rem+rem;
+        line-height: 88/$rem+rem;
+        // padding-left: 2%;
+        font-size: 18/$rem+rem;
+        color: $fong-color;
+        img{
+            width: 22/$rem+rem;
+            height: 22/$rem+rem;
+            margin: 0 4/$rem+rem;
+            vertical-align: middle;
+        }
+        b{
+            font-size: 26/$rem+rem;
+            margin-left: 2%;
+        }
+        a{
+           color: rgb(254, 102, 59)
+        }
+    }
+    .activityimg{
+        width: 100%;
+        height: 244/$rem+rem;
+        background: url(../images/fan25.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.recommend{
+    width: 100%;
+    height: 842/$rem+rem;
+    background-color: $bg-color;
+    padding-top: 36/$rem+rem;
+    color: rgb(69,69,77);
+    h2{
+        width: 335/$rem+rem;
+        height: 116/$rem+rem;
+        background: url(../images/fan2.png) no-repeat;
+        background-size: 100% 100%;
+        margin:  0 auto;
+        overflow: hidden;
+        .recommend-title{
+            width: 290/$rem+rem;
+            height: 70/$rem+rem;
+            background-color: rgb(250,212,40);
+            margin: 23/$rem+rem auto;
+            overflow: hidden;
+            h3{
+                font-size: 28/$rem+rem;
+                text-align: center;
+                color: rgb(69,69,77);
+                margin: 12/$rem+rem 0;
+            }
+            h4{
+                height: 10/$rem+rem;
+                font-size: 16/$rem+rem;
+                text-align: center; 
+                color: rgb(69,69,77);
+                line-height: 16/$rem+rem;
+            }
+        }
+    }
+    .recommend-box{
+        width:100%;
+        height: 500/$rem+rem;
+        margin-top: 40/$rem+rem;
+        text-align: center; 
+        .boxleft{
+            width: 49.5%;
+            float: left;
+            h5{
+                text-align: center; 
+                font-size: 22/$rem+rem;
+                color: #333;
+                letter-spacing: 1/$rem+rem
+            }
+            h6{
+                text-align: center; 
+                font-size: 16/$rem+rem;
+                color: #aaa;
+                margin-top: 13/$rem+rem
+            }
+            i{
+                display: block;
+                font-size: 20/$rem+rem;
+                font-style: normal;
+                margin-top: 50/$rem+rem;
+                color: rgb(73,73,73);
+            }
+            b{
+                display: block;
+                font-size: 20/$rem+rem;
+                color: rgb(58,58,58);
+                margin-top: 28/$rem+rem;
+                letter-spacing: 1/$rem+rem;
+                span{
+                    font-size: 32/$rem+rem;
+                    color: rgb(255,104,55);
+                }
+            }
+            s{
+                color: #bbb;
+                font-size: 20/$rem+rem;
+                letter-spacing: 1/$rem+rem;
+                margin-top: 14/$rem+rem;
+                display: block;
+            }
+            p{
+                height: 40/$rem+rem;
+                width: 200/$rem+rem;
+                background-color: rgb(250,212,41);
+                margin: 20/$rem+rem auto;
+                margin-bottom: 40/$rem+rem;
+                border-radius: 30/$rem+rem;
+                a{
+                    font-size: 22/$rem+rem;
+                    color: $fong-color;
+                    line-height: 40/$rem+rem;
+                    .shopcar{
+                        width: 28/$rem+rem;
+                        height: 28/$rem+rem;
+                        margin-top: -10/$rem+rem;
+                    }
+                }
+            }
+        }
+        .imgfish{
+            width: 274/$rem+rem;
+            height: 167/$rem+rem;
+            margin-top: 38/$rem+rem;
+        }
+        .imgfl{
+            width: 213/$rem+rem;
+            height: 232/$rem+rem;
+            margin-top: 4/$rem+rem;
+            margin-bottom: -32/$rem+rem;
+        }
+        .line{
+            width: 0.5%;
+            height: 400/$rem+rem;
+            border-left: 2/$rem+rem solid #eee;
+            float: left;
+            margin-top: 60/$rem+rem;
+        }
+        
+    }
+
+}
+.more{
+    width: 130/$rem+rem;
+    height: 50/$rem+rem;
+    background: url(../images/fan16.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 70%;
+    margin: 0 auto;
+    font-size: 20/$rem+rem;
+    color: $fong-color;
+    letter-spacing: 1/$rem+rem;
+    text-align: center;
+}
+/************每日限量*************/
+.days{
+    width: 100%;
+    height:946/$rem+rem;
+    background-color: $bg-color;
+    margin-top: 20/$rem+rem;
+    padding-top: 20/$rem+rem;
+    .daytop{
+        width: 149/$rem+rem;
+        height: 76/$rem+rem;
+        background: url(../images/fan20.png);
+        background-size: 100% 100%;
+        margin: 0 auto;
+        line-height: 76/$rem+rem;
+        text-align: center;
+        font-size: 28/$rem+rem;
+        color: $fong-color;
+        margin-bottom: 50/$rem+rem;
+    }
+    .daybox{
+        width: 100%;
+        height: 380/$rem+rem;
+        .daybox-left{
+            width: 50%;
+            float: left;
+            span{
+                padding: 6/$rem+rem 18/$rem+rem;
+                background-color: $fong-color;
+                color: #fff;
+                font-size: 20/$rem+rem;
+                text-align: center;
+                margin-left: 46/$rem+rem;
+                line-height: 32/$rem+rem;
+            } 
+            img{
+                width: 188/$rem+rem;
+                height: 206/$rem+rem;
+                margin-left: 20%;
+                margin-top: 60/$rem+rem;
+            }          
+        }
+        .daybox-right{
+            width: 50%;
+            float: left;
+            h3{
+                margin-top: 54/$rem+rem;
+                font-size: 24/$rem+rem;
+                color: $fong-color;
+                font-weight: normal;
+            }
+            p{
+                width: 90%;
+                font-size: 18/$rem+rem;
+                color: rgb(149,149,149);
+                line-height: 30/$rem+rem;
+                margin-top: 44/$rem+rem;
+            }
+        }
+    }
+    .daybox1{
+        width: 100%;
+        height: 390/$rem+rem;
+        padding-top: 20/$rem+rem;
+        .daybox1-left{
+            width: 50%;
+            float: left;
+            span{
+                padding: 6/$rem+rem 18/$rem+rem;
+                background-color: $fong-color;
+                color: #fff;
+                font-size: 20/$rem+rem;
+                text-align: center;
+                line-height: 32/$rem+rem;
+                float: right;
+                margin-right:46/$rem+rem; 
+                margin-top: 10/$rem+rem;
+            } 
+            img{
+                width: 188/$rem+rem;
+                height: 206/$rem+rem;
+                margin-left: 20%;
+                margin-top: 60/$rem+rem;
+            }          
+        }
+        .daybox1-right{
+            width: 50%;
+            float: left;
+            h3{
+                margin-top: 54/$rem+rem;
+                font-size: 24/$rem+rem;
+                color: $fong-color;
+                font-weight: normal;
+                margin-left: 6%;
+            }
+            p{
+                width: 90%;
+                font-size: 18/$rem+rem;
+                color: rgb(149,149,149);
+                line-height: 30/$rem+rem;
+                margin-top: 44/$rem+rem;
+                margin-left: 7%;
+            }
+        }
+    }
+}
+.cutline{
+    width: 90%;
+    height: 1/$rem+rem;
+    margin: 0 auto;
+    border-top: 1/$rem+rem solid #999;
+}
+/*********进店必买*********/
+.mustbuy{
+    width: 100%;
+    height: 1424/$rem+rem;
+    background-color: $bg-color;
+    margin-top: 20/$rem+rem;
+    .mustbuytop{
+        width: 100%;
+        height: 260/$rem+rem;
+        background: url(../images/fan26.png) no-repeat;
+        background-size: 100% 100%; 
+    }
+    h3{
+        width: 204/$rem+rem;
+        height: 40/$rem+rem;
+        background: url(../images/fan41.png) no-repeat;
+        background-size: 100% 100%; 
+        margin: 0 auto;
+        margin-top: 60/$rem+rem;
+        text-align: center;
+        color: $fong-color;
+        font-weight: normal;
+        b{
+            display: block;
+            font-style: normal;
+            height: 28/$rem+rem;
+            font-size: 28/$rem+rem;
+            line-height: 28/$rem+rem;
+        }
+        i{
+            font-style: normal;
+            font-size: 12/$rem+rem;
+            display: block;
+            height: 12/$rem+rem;
+            line-height: 24/$rem+rem;
+            letter-spacing: -1/$rem+rem;
+        }
+    }
+    .mustbuybox{
+        width: 100%;
+        height: 240/$rem+rem;
+        margin-top: 50/$rem+rem;
+        .mustbuybox-left{
+            width: 50%;
+            float: left;
+            img{
+                width: 222/$rem+rem;
+                height: 188/$rem+rem;
+                margin-left: 20%;
+            }
+            .ml{
+                margin-left: 10%;
+            }
+        }
+        .mustbuybox-right{
+            width: 50%;
+            float: left;
+            h4{
+                font-size: 16/$rem+rem;
+                font-weight: normal;
+                margin-left: 5%;
+                span{
+                    color: rgb(255,104,55);
+                    font-size: 32/$rem+rem;
+                }
+                s{
+                    color: #999;
+                    letter-spacing: 1/$rem+rem;
+                }
+            }
+            p{
+                width: 75%;
+                height: 70/$rem+rem;
+                border-left: 1/$rem+rem solid #aaa;
+                margin-left: 20%;
+                padding: 0;
+                font-size: 14/$rem+rem;
+                color: #666;
+                padding-left: 8/$rem+rem;
+                b{
+                    font-size: 24/$rem+rem;
+                    color: $fong-color;
+                    display: block;
+                    line-height: 24/$rem+rem;
+                }
+                i{
+                    font-size: 12/$rem+rem;
+                    letter-spacing: 1/$rem+rem;
+                    color: #666;
+                    font-style: normal;
+                    display: block;
+                    line-height: 12/$rem+rem;
+                    margin-top: 16/$rem+rem;
+                }
+            }
+        }
+        .pl{
+            width: 40%;
+            margin-left: 10%;
+        }
+    }
+    .bottomkind{
+        width: 100%;
+        height: 240/$rem+rem;
+        margin-bottom: 60/$rem+rem;
+        li{
+            width: 32.5%;
+            height: 240/$rem+rem;
+            float: left;
+            text-align: center;
+            h5{
+                font-size: 22/$rem+rem;
+                color: $fong-color;
+                height: 22/$rem+rem;
+                font-weight: normal;
+            }
+            h6{
+                font-size: 16/$rem+rem;
+                color: #999;
+                height: 16/$rem+rem;
+                margin-top: 4/$rem+rem;
+                font-weight: normal;
+            }
+            img{
+                width: 116/$rem+rem;
+                height: 118/$rem+rem;
+                margin: 0 auto;
+                margin-top: 40/$rem+rem;
+                display: block;
+            }
+            b{
+                font-size: 12/$rem+rem;
+                color: $fong-color;
+                font-weight: normal;
+                float: left;
+                margin-left: 7%;
+                letter-spacing: -1/$rem+rem;
+                span{
+                    font-size: 22/$rem+rem;
+                    color: rgb(255,104,55);
+                }
+                
+            }
+            s{
+                font-size: 12/$rem+rem;
+                color: #999;
+                letter-spacing: -1/$rem+rem;
+                float: right;
+                margin-right: 7%;
+            }
+        }
+        .liney{
+            width: 0.5%;
+            height: 160/$rem+rem;
+            border-left: 1px solid #c6c6c6;;
+            margin: 40/$rem+rem 0;
+        }
+    }
+    .all{
+        width: 84/$rem+rem;
+        height: 70/$rem+rem;
+        font-size: 20/$rem+rem;
+        color: $fong-color;
+        text-align: center;
+        margin: 0 auto;
+        img{
+            width: 32/$rem+rem;
+            height: 32/$rem+rem;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+/********极致鲜味*********/
+.max{
+    width: 100%;
+    height: 360/$rem+rem;
+    background-color: $bg-color;
+    .maxtop{
+        width: 100%;
+        height: 290/$rem+rem;
+        background: url(../images/fan38.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+/********大家都在买*********/
+.every{
+    width: 100%;
+    height: 1454/$rem+rem;
+    background-color: $bg-color;
+    padding-top: 40/$rem+rem;
+    box-sizing: border-box;
+    h3{
+        width: 204/$rem+rem;
+        height: 40/$rem+rem;
+        background: url(../images/fan41.png) no-repeat;
+        background-size: 100% 100%; 
+        margin: 0 auto;
+        text-align: center;
+        color: $fong-color;
+        font-weight: normal;
+        margin-bottom: 40/$rem+rem;
+        b{
+            display: block;
+            font-style: normal;
+            height: 28/$rem+rem;
+            font-size: 28/$rem+rem;
+            line-height: 28/$rem+rem;
+        }
+        i{
+            font-style: normal;
+            font-size: 12/$rem+rem;
+            display: block;
+            height: 12/$rem+rem;
+            line-height: 24/$rem+rem;
+            letter-spacing: -1/$rem+rem;
+        }
+    }
+    .buybox{
+        width: 100%;
+        height: 260/$rem+rem;
+        padding-top: 40/$rem+rem;
+        overflow: hidden;
+        .buyboxleft{
+            width: 50%;
+            height: 240/$rem+rem;
+            float: left;
+            text-align: center;
+            img{
+                width: 226/$rem+rem;
+                height: 216/$rem+rem;
+            }
+        }
+        .buyboxright{
+            width: 50%;
+            height: 260/$rem+rem;
+            float: left;
+            h4{
+                font-size: 28/$rem+rem;
+                color: $fong-color;
+                font-weight: normal;
+            }
+            h5{
+                font-size: 22/$rem+rem;
+                color: rgb(160,160,160); 
+                font-weight: normal;
+                line-height: 30/$rem+rem;
+                margin-top: 12/$rem+rem;
+            }
+            h6{
+                font-size: 16/$rem+rem;
+                font-weight: normal;
+                margin-top: 18/$rem+rem;
+                span{
+                    color: rgb(255,104,55);
+                    font-size: 32/$rem+rem;
+                }
+                s{
+                    color: #999;
+                    letter-spacing: 1/$rem+rem;
+                }
+            }
+            p{
+                height: 40/$rem+rem;
+                width: 200/$rem+rem;
+                background-color: rgb(250,212,41);
+                margin: 20/$rem+rem auto;
+                margin-bottom: 40/$rem+rem;
+                border-radius: 30/$rem+rem;
+                text-align: center;
+                a{
+                    font-size: 22/$rem+rem;
+                    color: $fong-color;
+                    line-height: 40/$rem+rem;
+                    .shopcar{
+                        width: 28/$rem+rem;
+                        height: 28/$rem+rem;
+                        margin-top: -10/$rem+rem;
+                    }
+                }
+                img{
+                    vertical-align: middle;
+
+                }
+            }
+        }
+    }
+}
+/********不见不散*********/
+.welcome{
+    width: 100%;
+    height: 100/$rem+rem;
+    background: url(../images/fan42.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 20/$rem+rem 0;
+}
+/**********底部留白**********/
+.kong{
+    width: 100%;
+    height: 100/$rem+rem;
+}

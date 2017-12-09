@@ -1,0 +1,699 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0; }
+
+div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, img, ol, ul, li, table, th, td, p, span, a {
+  border: 0; }
+
+img, input {
+  border: none;
+  vertical-align: middle; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  background: #FFF;
+  color: #212121;
+  line-height: 30px;
+  background: #e6e6e6; }
+
+html {
+  overflow-y: scroll; }
+
+ul, ol {
+  list-style-type: none; }
+
+th, td, input {
+  font-size: 12px; }
+
+h3 {
+  font-size: 14px; }
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: transparent; }
+
+select {
+  border-width: 1px;
+  _zoom: 1;
+  border-style: solid;
+  padding-top: 2px;
+  font-size: 12px; }
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  height: 0;
+  visibility: hidden;
+  line-height: 0; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #333; }
+
+body {
+  background-color: #f2f2f2; }
+
+.clear {
+  clear: both; }
+
+/**********顶部********/
+.top {
+  width: 100%;
+  height: 4.24rem;
+  background: url(../images/fan1.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative; }
+  .top .look {
+    width: 100%;
+    height: 0.66667rem;
+    position: absolute;
+    top: 0.77333rem;
+    left: 0; }
+    .top .look .look-left {
+      width: 20%;
+      height: 0.66667rem;
+      float: left; }
+      .top .look .look-left a {
+        display: block;
+        width: 100%;
+        height: 0.66667rem;
+        font-size: 0.26667rem;
+        color: #fff;
+        font-family: "微软雅黑";
+        outline: none;
+        line-height: 0.66667rem; }
+        .top .look .look-left a i {
+          display: inline-block;
+          width: 0.26667rem;
+          height: 0.32rem;
+          background: url(../images/fan7.png) no-repeat;
+          background-size: 100% 100%;
+          margin-left: 9%;
+          margin-top: -0.08remv;
+          vertical-align: middle; }
+        .top .look .look-left a span {
+          display: inline-block;
+          transform: rotate(90deg); }
+    .top .look .look-box {
+      width: 60%;
+      height: 0.66667rem;
+      float: left;
+      background-color: #fff;
+      opacity: 0.8;
+      border-radius: 0.96rem; }
+      .top .look .look-box img {
+        width: 0.34667rem;
+        height: 0.34667rem;
+        vertical-align: middle;
+        margin-left: 0.4rem; }
+      .top .look .look-box input {
+        font-size: 0.26667rem;
+        color: #444444;
+        text-indent: 0.08rem;
+        width: 70%;
+        height: 0.66667rem;
+        line-height: 0.66667rem;
+        outline: none; }
+    .top .look .look-right {
+      width: 20%;
+      height: 0.66667rem;
+      float: left; }
+      .top .look .look-right img {
+        width: 0.66667rem;
+        height: 0.66667rem;
+        margin-left: 8%; }
+
+/*********底部********/
+.foot {
+  width: 100%;
+  height: 1.33333rem;
+  border-top: 0.02667rem solid #ddd;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff; }
+  .foot ul {
+    padding-top: 0.26667rem;
+    width: 100%;
+    height: 1.12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .foot ul li {
+      width: 25%;
+      height: 1.46667rem;
+      text-align: center;
+      font-size: 0.21333rem;
+      color: #444444; }
+      .foot ul li img {
+        width: 0.61333rem;
+        width: 0.61333rem;
+        margin-top: 0.14667rem; }
+      .foot ul li p {
+        margin-top: 0.06667rem; }
+
+/**********分类********/
+.kind {
+  width: 100%;
+  height: 2.98667rem;
+  background-color: #fff;
+  margin-top: 0.26667rem;
+  position: relative; }
+  .kind .kind-logo {
+    width: 100%;
+    height: 2.98667rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .kind .kind-logo li {
+      width: 20%;
+      text-align: center; }
+      .kind .kind-logo li img {
+        width: 0.8rem;
+        height: 0.8rem; }
+      .kind .kind-logo li p {
+        font-size: 0.26667rem;
+        color: #444444;
+        margin-top: 0.21333rem; }
+  .kind .tip {
+    width: 0.8rem;
+    height: 0.13333rem;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 4.53333rem; }
+    .kind .tip li {
+      display: block;
+      width: 0.13333rem;
+      height: 0.13333rem;
+      float: left;
+      margin-left: 0.13333rem;
+      background-color: #959595;
+      border-radius: 50%; }
+    .kind .tip li:first-child {
+      background-color: #fddb48; }
+
+.activitynews {
+  background-color: #fff;
+  width: 100%;
+  height: 4.42667rem;
+  margin-top: 0.26667rem; }
+  .activitynews .title {
+    width: 100%;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    font-size: 0.24rem;
+    color: #444444; }
+    .activitynews .title img {
+      width: 0.29333rem;
+      height: 0.29333rem;
+      margin: 0 0.05333rem;
+      vertical-align: middle; }
+    .activitynews .title b {
+      font-size: 0.34667rem;
+      margin-left: 2%; }
+    .activitynews .title a {
+      color: #fe663b; }
+  .activitynews .activityimg {
+    width: 100%;
+    height: 3.25333rem;
+    background: url(../images/fan25.png) no-repeat;
+    background-size: 100% 100%; }
+
+.recommend {
+  width: 100%;
+  height: 11.22667rem;
+  background-color: #fff;
+  padding-top: 0.48rem;
+  color: #45454d; }
+  .recommend h2 {
+    width: 4.46667rem;
+    height: 1.54667rem;
+    background: url(../images/fan2.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .recommend h2 .recommend-title {
+      width: 3.86667rem;
+      height: 0.93333rem;
+      background-color: #fad428;
+      margin: 0.30667rem auto;
+      overflow: hidden; }
+      .recommend h2 .recommend-title h3 {
+        font-size: 0.37333rem;
+        text-align: center;
+        color: #45454d;
+        margin: 0.16rem 0; }
+      .recommend h2 .recommend-title h4 {
+        height: 0.13333rem;
+        font-size: 0.21333rem;
+        text-align: center;
+        color: #45454d;
+        line-height: 0.21333rem; }
+  .recommend .recommend-box {
+    width: 100%;
+    height: 6.66667rem;
+    margin-top: 0.53333rem;
+    text-align: center; }
+    .recommend .recommend-box .boxleft {
+      width: 49.5%;
+      float: left; }
+      .recommend .recommend-box .boxleft h5 {
+        text-align: center;
+        font-size: 0.29333rem;
+        color: #333;
+        letter-spacing: 0.01333rem; }
+      .recommend .recommend-box .boxleft h6 {
+        text-align: center;
+        font-size: 0.21333rem;
+        color: #aaa;
+        margin-top: 0.17333rem; }
+      .recommend .recommend-box .boxleft i {
+        display: block;
+        font-size: 0.26667rem;
+        font-style: normal;
+        margin-top: 0.66667rem;
+        color: #494949; }
+      .recommend .recommend-box .boxleft b {
+        display: block;
+        font-size: 0.26667rem;
+        color: #3a3a3a;
+        margin-top: 0.37333rem;
+        letter-spacing: 0.01333rem; }
+        .recommend .recommend-box .boxleft b span {
+          font-size: 0.42667rem;
+          color: #ff6837; }
+      .recommend .recommend-box .boxleft s {
+        color: #bbb;
+        font-size: 0.26667rem;
+        letter-spacing: 0.01333rem;
+        margin-top: 0.18667rem;
+        display: block; }
+      .recommend .recommend-box .boxleft p {
+        height: 0.53333rem;
+        width: 2.66667rem;
+        background-color: #fad429;
+        margin: 0.26667rem auto;
+        margin-bottom: 0.53333rem;
+        border-radius: 0.4rem; }
+        .recommend .recommend-box .boxleft p a {
+          font-size: 0.29333rem;
+          color: #444444;
+          line-height: 0.53333rem; }
+          .recommend .recommend-box .boxleft p a .shopcar {
+            width: 0.37333rem;
+            height: 0.37333rem;
+            margin-top: -0.13333rem; }
+    .recommend .recommend-box .imgfish {
+      width: 3.65333rem;
+      height: 2.22667rem;
+      margin-top: 0.50667rem; }
+    .recommend .recommend-box .imgfl {
+      width: 2.84rem;
+      height: 3.09333rem;
+      margin-top: 0.05333rem;
+      margin-bottom: -0.42667rem; }
+    .recommend .recommend-box .line {
+      width: 0.5%;
+      height: 5.33333rem;
+      border-left: 0.02667rem solid #eee;
+      float: left;
+      margin-top: 0.8rem; }
+
+.more {
+  width: 1.73333rem;
+  height: 0.66667rem;
+  background: url(../images/fan16.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 70%;
+  margin: 0 auto;
+  font-size: 0.26667rem;
+  color: #444444;
+  letter-spacing: 0.01333rem;
+  text-align: center; }
+
+/************每日限量*************/
+.days {
+  width: 100%;
+  height: 12.61333rem;
+  background-color: #fff;
+  margin-top: 0.26667rem;
+  padding-top: 0.26667rem; }
+  .days .daytop {
+    width: 1.98667rem;
+    height: 1.01333rem;
+    background: url(../images/fan20.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    line-height: 1.01333rem;
+    text-align: center;
+    font-size: 0.37333rem;
+    color: #444444;
+    margin-bottom: 0.66667rem; }
+  .days .daybox {
+    width: 100%;
+    height: 5.06667rem; }
+    .days .daybox .daybox-left {
+      width: 50%;
+      float: left; }
+      .days .daybox .daybox-left span {
+        padding: 0.08rem 0.24rem;
+        background-color: #444444;
+        color: #fff;
+        font-size: 0.26667rem;
+        text-align: center;
+        margin-left: 0.61333rem;
+        line-height: 0.42667rem; }
+      .days .daybox .daybox-left img {
+        width: 2.50667rem;
+        height: 2.74667rem;
+        margin-left: 20%;
+        margin-top: 0.8rem; }
+    .days .daybox .daybox-right {
+      width: 50%;
+      float: left; }
+      .days .daybox .daybox-right h3 {
+        margin-top: 0.72rem;
+        font-size: 0.32rem;
+        color: #444444;
+        font-weight: normal; }
+      .days .daybox .daybox-right p {
+        width: 90%;
+        font-size: 0.24rem;
+        color: #959595;
+        line-height: 0.4rem;
+        margin-top: 0.58667rem; }
+  .days .daybox1 {
+    width: 100%;
+    height: 5.2rem;
+    padding-top: 0.26667rem; }
+    .days .daybox1 .daybox1-left {
+      width: 50%;
+      float: left; }
+      .days .daybox1 .daybox1-left span {
+        padding: 0.08rem 0.24rem;
+        background-color: #444444;
+        color: #fff;
+        font-size: 0.26667rem;
+        text-align: center;
+        line-height: 0.42667rem;
+        float: right;
+        margin-right: 0.61333rem;
+        margin-top: 0.13333rem; }
+      .days .daybox1 .daybox1-left img {
+        width: 2.50667rem;
+        height: 2.74667rem;
+        margin-left: 20%;
+        margin-top: 0.8rem; }
+    .days .daybox1 .daybox1-right {
+      width: 50%;
+      float: left; }
+      .days .daybox1 .daybox1-right h3 {
+        margin-top: 0.72rem;
+        font-size: 0.32rem;
+        color: #444444;
+        font-weight: normal;
+        margin-left: 6%; }
+      .days .daybox1 .daybox1-right p {
+        width: 90%;
+        font-size: 0.24rem;
+        color: #959595;
+        line-height: 0.4rem;
+        margin-top: 0.58667rem;
+        margin-left: 7%; }
+
+.cutline {
+  width: 90%;
+  height: 0.01333rem;
+  margin: 0 auto;
+  border-top: 0.01333rem solid #999; }
+
+/*********进店必买*********/
+.mustbuy {
+  width: 100%;
+  height: 18.98667rem;
+  background-color: #fff;
+  margin-top: 0.26667rem; }
+  .mustbuy .mustbuytop {
+    width: 100%;
+    height: 3.46667rem;
+    background: url(../images/fan26.png) no-repeat;
+    background-size: 100% 100%; }
+  .mustbuy h3 {
+    width: 2.72rem;
+    height: 0.53333rem;
+    background: url(../images/fan41.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    text-align: center;
+    color: #444444;
+    font-weight: normal; }
+    .mustbuy h3 b {
+      display: block;
+      font-style: normal;
+      height: 0.37333rem;
+      font-size: 0.37333rem;
+      line-height: 0.37333rem; }
+    .mustbuy h3 i {
+      font-style: normal;
+      font-size: 0.16rem;
+      display: block;
+      height: 0.16rem;
+      line-height: 0.32rem;
+      letter-spacing: -0.01333rem; }
+  .mustbuy .mustbuybox {
+    width: 100%;
+    height: 3.2rem;
+    margin-top: 0.66667rem; }
+    .mustbuy .mustbuybox .mustbuybox-left {
+      width: 50%;
+      float: left; }
+      .mustbuy .mustbuybox .mustbuybox-left img {
+        width: 2.96rem;
+        height: 2.50667rem;
+        margin-left: 20%; }
+      .mustbuy .mustbuybox .mustbuybox-left .ml {
+        margin-left: 10%; }
+    .mustbuy .mustbuybox .mustbuybox-right {
+      width: 50%;
+      float: left; }
+      .mustbuy .mustbuybox .mustbuybox-right h4 {
+        font-size: 0.21333rem;
+        font-weight: normal;
+        margin-left: 5%; }
+        .mustbuy .mustbuybox .mustbuybox-right h4 span {
+          color: #ff6837;
+          font-size: 0.42667rem; }
+        .mustbuy .mustbuybox .mustbuybox-right h4 s {
+          color: #999;
+          letter-spacing: 0.01333rem; }
+      .mustbuy .mustbuybox .mustbuybox-right p {
+        width: 75%;
+        height: 0.93333rem;
+        border-left: 0.01333rem solid #aaa;
+        margin-left: 20%;
+        padding: 0;
+        font-size: 0.18667rem;
+        color: #666;
+        padding-left: 0.10667rem; }
+        .mustbuy .mustbuybox .mustbuybox-right p b {
+          font-size: 0.32rem;
+          color: #444444;
+          display: block;
+          line-height: 0.32rem; }
+        .mustbuy .mustbuybox .mustbuybox-right p i {
+          font-size: 0.16rem;
+          letter-spacing: 0.01333rem;
+          color: #666;
+          font-style: normal;
+          display: block;
+          line-height: 0.16rem;
+          margin-top: 0.21333rem; }
+    .mustbuy .mustbuybox .pl {
+      width: 40%;
+      margin-left: 10%; }
+  .mustbuy .bottomkind {
+    width: 100%;
+    height: 3.2rem;
+    margin-bottom: 0.8rem; }
+    .mustbuy .bottomkind li {
+      width: 32.5%;
+      height: 3.2rem;
+      float: left;
+      text-align: center; }
+      .mustbuy .bottomkind li h5 {
+        font-size: 0.29333rem;
+        color: #444444;
+        height: 0.29333rem;
+        font-weight: normal; }
+      .mustbuy .bottomkind li h6 {
+        font-size: 0.21333rem;
+        color: #999;
+        height: 0.21333rem;
+        margin-top: 0.05333rem;
+        font-weight: normal; }
+      .mustbuy .bottomkind li img {
+        width: 1.54667rem;
+        height: 1.57333rem;
+        margin: 0 auto;
+        margin-top: 0.53333rem;
+        display: block; }
+      .mustbuy .bottomkind li b {
+        font-size: 0.16rem;
+        color: #444444;
+        font-weight: normal;
+        float: left;
+        margin-left: 7%;
+        letter-spacing: -0.01333rem; }
+        .mustbuy .bottomkind li b span {
+          font-size: 0.29333rem;
+          color: #ff6837; }
+      .mustbuy .bottomkind li s {
+        font-size: 0.16rem;
+        color: #999;
+        letter-spacing: -0.01333rem;
+        float: right;
+        margin-right: 7%; }
+    .mustbuy .bottomkind .liney {
+      width: 0.5%;
+      height: 2.13333rem;
+      border-left: 1px solid #c6c6c6;
+      margin: 0.53333rem 0; }
+  .mustbuy .all {
+    width: 1.12rem;
+    height: 0.93333rem;
+    font-size: 0.26667rem;
+    color: #444444;
+    text-align: center;
+    margin: 0 auto; }
+    .mustbuy .all img {
+      width: 0.42667rem;
+      height: 0.42667rem;
+      display: block;
+      margin: 0 auto; }
+
+/********极致鲜味*********/
+.max {
+  width: 100%;
+  height: 4.8rem;
+  background-color: #fff; }
+  .max .maxtop {
+    width: 100%;
+    height: 3.86667rem;
+    background: url(../images/fan38.png) no-repeat;
+    background-size: 100% 100%; }
+
+/********大家都在买*********/
+.every {
+  width: 100%;
+  height: 19.38667rem;
+  background-color: #fff;
+  padding-top: 0.53333rem;
+  box-sizing: border-box; }
+  .every h3 {
+    width: 2.72rem;
+    height: 0.53333rem;
+    background: url(../images/fan41.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #444444;
+    font-weight: normal;
+    margin-bottom: 0.53333rem; }
+    .every h3 b {
+      display: block;
+      font-style: normal;
+      height: 0.37333rem;
+      font-size: 0.37333rem;
+      line-height: 0.37333rem; }
+    .every h3 i {
+      font-style: normal;
+      font-size: 0.16rem;
+      display: block;
+      height: 0.16rem;
+      line-height: 0.32rem;
+      letter-spacing: -0.01333rem; }
+  .every .buybox {
+    width: 100%;
+    height: 3.46667rem;
+    padding-top: 0.53333rem;
+    overflow: hidden; }
+    .every .buybox .buyboxleft {
+      width: 50%;
+      height: 3.2rem;
+      float: left;
+      text-align: center; }
+      .every .buybox .buyboxleft img {
+        width: 3.01333rem;
+        height: 2.88rem; }
+    .every .buybox .buyboxright {
+      width: 50%;
+      height: 3.46667rem;
+      float: left; }
+      .every .buybox .buyboxright h4 {
+        font-size: 0.37333rem;
+        color: #444444;
+        font-weight: normal; }
+      .every .buybox .buyboxright h5 {
+        font-size: 0.29333rem;
+        color: #a0a0a0;
+        font-weight: normal;
+        line-height: 0.4rem;
+        margin-top: 0.16rem; }
+      .every .buybox .buyboxright h6 {
+        font-size: 0.21333rem;
+        font-weight: normal;
+        margin-top: 0.24rem; }
+        .every .buybox .buyboxright h6 span {
+          color: #ff6837;
+          font-size: 0.42667rem; }
+        .every .buybox .buyboxright h6 s {
+          color: #999;
+          letter-spacing: 0.01333rem; }
+      .every .buybox .buyboxright p {
+        height: 0.53333rem;
+        width: 2.66667rem;
+        background-color: #fad429;
+        margin: 0.26667rem auto;
+        margin-bottom: 0.53333rem;
+        border-radius: 0.4rem;
+        text-align: center; }
+        .every .buybox .buyboxright p a {
+          font-size: 0.29333rem;
+          color: #444444;
+          line-height: 0.53333rem; }
+          .every .buybox .buyboxright p a .shopcar {
+            width: 0.37333rem;
+            height: 0.37333rem;
+            margin-top: -0.13333rem; }
+        .every .buybox .buyboxright p img {
+          vertical-align: middle; }
+
+/********不见不散*********/
+.welcome {
+  width: 100%;
+  height: 1.33333rem;
+  background: url(../images/fan42.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.26667rem 0; }
+
+/**********底部留白**********/
+.kong {
+  width: 100%;
+  height: 1.33333rem; }
+
+/*# sourceMappingURL=style.css.map */
