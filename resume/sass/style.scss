@@ -1,0 +1,315 @@
+@charset "UTF-8";
+ul,li{list-style: none;margin: 0;padding: 0;}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+$rem:32;
+/********封面*********/
+.bg{
+    position: relative;
+    overflow: hidden;
+}
+.audio{
+    width: 50/$rem + rem;
+    height: 50/$rem + rem;
+    position: fixed;
+    top: 5/$rem + rem;
+    right: 5/$rem + rem;
+    z-index: 10;
+}
+.audio img{
+    width: 24/$rem + rem;
+    height: 24/$rem + rem;
+    margin-top: 20/$rem +rem;
+}
+.audio audio{
+    display: none;
+}
+@keyframes music-rotate{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+.music-rotate{
+    animation: music-rotate 5s linear 0s infinite;
+}
+.audio-bg{
+    background: url(../img/music-img-bg.gif) no-repeat;
+    background-size:100% 100%; 
+    background-position: 10/$rem +rem -5/$rem +rem;
+}
+.more{
+    width: 24/$rem + rem;
+    height: 18/$rem + rem; 
+    background: url(../img/9.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 25/$rem + rem;
+    left: 153/$rem + rem;
+    z-index: 10;
+    animation: moremove 1s linear 0s infinite;
+}
+@keyframes moremove{
+    25%{bottom: 29/$rem + rem;opacity: 0.8;}
+    50%{bottom: 33/$rem + rem;opacity: 0.4;}
+    75%{bottom: 37/$rem + rem;opacity: 0.2;}
+    100%{bottom: 41/$rem + rem;opacity: 0;}
+}
+.cover-text-bg{
+    width: 309/$rem +rem;
+    height: 464/$rem +rem;
+    background: url(../img/cover-text-bg.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 30/$rem + rem;
+    position: relative;
+    text-align: center;
+}
+.cover-text-bg img{
+    width: 236/$rem +rem;
+    height: 103/$rem +rem;
+    margin-top: 160/$rem +rem;
+    margin-left: 10/$rem +rem;
+}
+.cover-text-bg h3{
+    font-size: 18/$rem +rem;
+    color: #111;
+    font-weight: normal;
+    letter-spacing: 2/$rem + rem;
+    margin-top: 5/$rem + rem;
+}
+.hand-box{
+    
+    position: absolute;
+    right: -56/$rem +rem;
+    top: -2/$rem +rem;
+    transform: rotate(180deg);
+}
+.hand-top{
+    width: 264/$rem +rem;
+    height: 165/$rem +rem;
+    background: url(../img/hand.png) no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    
+}
+.hand-bottom{
+    width: 264/$rem +rem;
+    height: 165/$rem +rem;
+    background: url(../img/hand.png) no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -56/$rem +rem;
+    bottom: -2/$rem +rem;
+}
+/*************基本信息*************/
+.title1{
+    width: 206/$rem +rem;
+    height: 47/$rem +rem;
+    background: url(../img/title1.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 57/$rem +rem;
+    margin-left: 10/$rem +rem;
+}
+.title1 img{
+    width: 37/$rem +rem;
+    height: 28/$rem +rem;
+    margin: 7/$rem +rem 0 0 20/$rem +rem;
+    float: left;
+}
+.title1 h3{
+    font-size: 18/$rem +rem;
+    color: #fff;
+    margin: 13/$rem +rem 0 0 23/$rem +rem;
+    float: left;
+    letter-spacing: 4/$rem +rem;
+}
+.information{
+    width: 264/$rem +rem;
+    height: 355/$rem +rem;
+    margin: 20/$rem +rem auto;
+    .lf-line{
+        width: 2/$rem +rem;
+        height: 355/$rem +rem; 
+        float: left;
+        background-color: rgb(192,29,33);
+    }
+    ul{
+        overflow: hidden;
+        li{
+            text-align: left;
+            font-size: 18/$rem +rem;
+            color: #fff;
+            margin: 21/$rem +rem 0 0 12/$rem +rem;
+            img{
+                width: 17/$rem +rem;
+                height: 17/$rem +rem; 
+                margin-right: 4/$rem +rem;
+                margin-top: 4/$rem +rem;
+            }
+        }
+    }
+}
+/*********经验**********/
+.experience{
+    .title2{
+        width: 206/$rem +rem;
+        height: 47/$rem +rem;
+        background: url(../img/title2.png) no-repeat;
+        background-size: 100% 100%;
+        margin-top: 57/$rem +rem;
+        margin-left: 10/$rem +rem;
+    }
+    .title2 img{
+        width: 37/$rem +rem;
+        height: 28/$rem +rem;
+        margin: 9/$rem +rem 0 0 21/$rem +rem;
+        float: left;
+    }
+    .title2 h3{
+        font-size: 18/$rem +rem;
+        color: #fff;
+        margin: 13/$rem +rem 0 0 23/$rem +rem;
+        float: left;
+        letter-spacing: 4/$rem +rem;
+    }
+    .work{
+        width: 260/$rem +rem;
+        margin:  0 auto;
+        font-size: 14/$rem +rem;
+        color: #fff;
+        text-align: left;
+        h4{
+            margin:10/$rem +rem 0; 
+        }
+    }
+    .object{
+        width: 260/$rem +rem;
+        margin:  0 auto;
+        font-size: 14/$rem +rem;
+        color: #fff;
+        text-align: left;
+    }
+}
+/*********作品展示***********/
+.title3{
+    width: 206/$rem +rem;
+    height: 47/$rem +rem;
+    background: url(../img/title3.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 57/$rem +rem;
+    margin-left: 10/$rem +rem;
+}
+.title3 img{
+    height: 28/$rem +rem;
+    margin: 7/$rem +rem 0 0 18/$rem +rem;
+    float: left;
+}
+.title3 h3{
+    font-size: 18/$rem +rem;
+    color: #fff;
+    margin: 13/$rem +rem 0 0 23/$rem +rem;
+    float: left;
+    letter-spacing: 4/$rem +rem;
+}
+.works{
+    width: 285/$rem +rem;
+    height: 410/$rem +rem;
+    margin: 0 auto;
+    position: relative;
+    .show1{
+        width: 134/$rem +rem;
+        height: 70/$rem +rem;
+        background: url(../img/works1.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 40/$rem +rem;
+        left: 37/$rem +rem;
+    }
+    .show2{
+        width: 134/$rem +rem;
+        height: 70/$rem +rem;
+        background: url(../img/works2.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 65/$rem +rem;
+        left: 107/$rem +rem;
+    }
+    .show3{
+        width: 134/$rem +rem;
+        height: 70/$rem +rem;
+        background: url(../img/works3.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 115/$rem +rem;
+        left: 57/$rem +rem;
+    }
+    .show4{
+        width: 64/$rem +rem;
+        height: 112/$rem +rem;
+        background: url(../img/works4.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 210/$rem +rem;
+        left: 25/$rem +rem;
+        transform: rotate(-25deg);
+    }
+    .show5{
+        width: 64/$rem +rem;
+        height: 112/$rem +rem;
+        background: url(../img/works5.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 210/$rem +rem;
+        left: 110/$rem +rem;
+        transform: rotate(-25deg);
+    }
+    .show6{
+        width: 64/$rem +rem;
+        height: 112/$rem +rem;
+        background: url(../img/works6.jpg) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 210/$rem +rem;
+        left: 193/$rem +rem;
+        transform: rotate(-25deg);
+    }
+}
+/*********技能特长**********/
+.title4{
+    width: 206/$rem +rem;
+    height: 47/$rem +rem;
+    background: url(../img/title4.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 57/$rem +rem;
+    margin-left: 10/$rem +rem;
+}
+.title4 img{
+    width: 37/$rem +rem;
+    height: 28/$rem +rem;
+    margin: 7/$rem +rem 0 0 20/$rem +rem;
+    float: left;
+}
+.title4 h3{
+    font-size: 18/$rem +rem;
+    color: #fff;
+    margin: 13/$rem +rem 0 0 23/$rem +rem;
+    float: left;
+    letter-spacing: 4/$rem +rem;
+}
+.skill{
+    p{  
+        width: 80%;
+        font-size: 16/$rem +rem;
+        color: #fff;
+        margin: 15/$rem +rem auto;
+        line-height: 1.5;
+    }
+}
